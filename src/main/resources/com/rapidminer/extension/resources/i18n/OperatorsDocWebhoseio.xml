@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<operatorHelp lang="en_EN">
+    <!--  This is an example how to specify the translation of operator keys to names. -->
+    <operator>
+        <key>webhoseio_search_operator</key>
+        <name>Search Webhose.io</name>
+    </operator>
+    <group>
+        <key>webhoseio_search</key>
+        <name>Webhoseo.io</name>
+    </group>
+
+</operatorHelp>

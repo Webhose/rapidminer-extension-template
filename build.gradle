@@ -1,8 +1,8 @@
 buildscript {
-	repositories {
-	    jcenter()
-		maven { url 'https://maven.rapidminer.com/content/groups/public/' }
-	}
+    repositories {
+        jcenter()
+        maven { url 'https://maven.rapidminer.com/content/groups/public/' }
+    }
 }
 
 plugins { id 'com.rapidminer.extension' version '0.9.3' }
@@ -10,13 +10,13 @@ plugins { id 'com.rapidminer.extension' version '0.9.3' }
 // Define Maven artifact repositories
 repositories {
     jcenter()
-	maven { url 'https://maven.rapidminer.com/content/groups/public/' }
+    maven { url 'https://maven.rapidminer.com/content/groups/public/' }
 }
 
 extensionConfig {
 
     // The extension name
-    name 'Template'
+    name 'Webhoseio'
 
     /*
      * The artifact group which will be used when publishing the extensions Jar
@@ -24,7 +24,7 @@ extensionConfig {
      *
      * It is 'com.rapidminer.extension' by default.
      */
-    //groupId = 'com.rapidminer.extension'
+    groupId = 'com.rapidminer.extension'
 
     /*
      * The extension vendor which will be displayed in the extensions about box
@@ -32,7 +32,7 @@ extensionConfig {
      *
      * It is 'RapidMiner GmbH' by default.
      */
-    //vendor = "RapidMiner GmbH"
+    vendor = "webhose.io"
 
     /*
      * The vendor homepage which will be displayed in the extensions about box
@@ -40,7 +40,7 @@ extensionConfig {
      *
      * It is 'www.rapidminer.com' by default.
      */
-    //homepage = "www.rapidminer.com"
+    homepage = "webhose.io"
 
     // define RapidMiner version and extension dependencies
     dependencies {
@@ -51,5 +51,7 @@ extensionConfig {
 
 // Define third party library dependencies
 dependencies {
-	//compile 'com.google.guava:guava:26.0'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.8'
+    compile group: 'joda-time', name: 'joda-time', version: '2.10.2'
 }

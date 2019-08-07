@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<operators name="webhoseio" version="6.0" docbundle="com/rapidminer/extension/resources/i18n/OperatorsDocWebhoseio">
+    <group key="">
+        <!-- This is an example how to specify Operators and Operator groups. The Operator groups define
+                where Operators will be located in the Operator tree. -->
+        <operator>
+            <key>webhoseio_search_operator</key>
+            <class>com.rapidminer.extension.operator.WebhoseIOOperator</class>
+            <icon>icon.png</icon>
+        </operator>
+    </group>
+</operators>

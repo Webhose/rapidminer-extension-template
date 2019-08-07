@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../rapidminerreferencemanual/documentation2html.xsl"?>
+<p1:documents xmlns:p1="http://rapid-i.com/schemas/documentation/reference/1.0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://rapid-i.com/schemas/documentation/reference/1.0 ">
+
+    <operator key="operator.webhoseio:webhoseio_search_operator" locale="en"
+              version="1.0.000">
+        <title>Search webhose.io</title>
+        <synopsis>Run queries on the Webhose.io API and access data feeds from news, blogs, online discussions, reviews and more.
+        </synopsis>
+        <text>
+            <paragraph>Webhose.io is a Data as a Service (DaaS) data provider that delivers on demand access to
+                structured data in both the open, deep and dark webs that anyone can consume.</paragraph>
+
+            <paragraph>In addition to crawling and indexing blogs, news articles and online discussions data for customers in the news, media monitoring and market research industries, Webhose collaborates with top national security, Dark Web and law enforcement agencies along with organizations in the financial, health and consumer industries.</paragraph>
+
+            <paragraph>Access data in all languages across the globe. Simply enter your API key and a boolean search query to access data from Webhose.io.</paragraph>
+
+        </text>
+        <outputPorts>
+            <port name="output" type="com.rapidminer.webhoseio.ExampleSet">
+                Output port description.
+            </port>
+        </outputPorts>
+
+        <!-- description of the parameters and the corresponding values -->
+        <parameters>
+            <parameter key="token" type="">
+                Your webhose.io token. Get one here: https://webhose.io/auth/signup
+            </parameter>
+            <parameter key="query" type="selection">
+                The boolean query for your search. Example: 'stock market' language:english
+            </parameter>
+            <parameter key="max_requests" type="">
+                The maximum number of API calls you want to make. Each API returns up to 100 results
+            </parameter>
+        </parameters>
+
+        <relatedDocuments>
+            <!-- ... -->
+        </relatedDocuments>
+    </operator>
+</p1:documents>
